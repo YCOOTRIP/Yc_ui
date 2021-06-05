@@ -1,0 +1,51 @@
+@import 'normalize.css';
+
+:root {
+  --color-primary: #409eff;
+  --color-success: #67c23a;
+  --color-warning: #e6a23c;
+  --color-danger: #f56c6c;
+
+  --color-background: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*规定容器元素的最终尺寸计算方式*/
+}
+
+body {
+  font-family: '微软雅黑', Arial;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-background);
+  width: 100vm;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
