@@ -22,9 +22,16 @@ body {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   background-color: var(--color-background);
-  width: 100vm;
+  width: 100%;
 }
 
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
 }

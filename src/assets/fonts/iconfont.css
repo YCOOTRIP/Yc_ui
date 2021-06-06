@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 2564537 */
+  src: url('iconfont.woff2?t=1622959641594') format('woff2'), url('iconfont.woff?t=1622959641594') format('woff'),
+    url('iconfont.ttf?t=1622959641594') format('truetype');
+}
+
+[class*='yc-icon-'] {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yc-icon-arrow-right:before {
+  content: '\e743';
+}
+
+.yc-icon-arrow-left:before {
+  content: '\e744';
+}
+
+.yc-icon-arrow-up:before {
+  content: '\e745';
+}
+
+.yc-icon-close:before {
+  content: '\e747';
+}
+
+.yc-icon-prompt:before {
+  content: '\e75e';
+}
+
+.yc-icon-seleted:before {
+  content: '\e763';
+}
+
+.yc-icon-add-select:before {
+  content: '\e7b0';
+}
+
+.yc-icon-sami-select:before {
+  content: '\e7b1';
+}
+
+.yc-icon-arrow-down:before {
+  content: '\e7b2';
+}
+
+.yc-icon-cart-Empty:before {
+  content: '\e7b3';
+}
+
+.yc-icon-favorites:before {
+  content: '\e7b4';
+}
+
+.yc-icon-search:before {
+  content: '\e7b5';
+}
+
+.yc-icon-user:before {
+  content: '\e606';
+}
+
+.yc-icon-password:before {
+  content: '\e607';
+}
