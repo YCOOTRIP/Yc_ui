@@ -1,37 +1,38 @@
 <template>
   <div id="app">
-    <!-- <yc-button type="primary" @click="dialogVisible = true">确定</yc-button> -->
-    <!-- <yc-dialog title="温馨提示"></yc-dialog> -->
-    <!-- <yc-dialog width="30%" top="35vh" :visible.sync="dialogVisible">
-      <template #title>
-        温馨提示
-      </template>
-      <template #footer>
-        <yc-button border @click="dialogVisible = false">取消</yc-button>
-        <yc-button border type="primary" @click="dialogVisible = false">确定</yc-button>
-      </template>
-    </yc-dialog> -->
+    <!-- <yc-input v-model="username" clearable></yc-input>
+    <yc-input v-model="password" type='password' showpassword></yc-input> -->
+    <!-- <yc-switch v-model="active"></yc-switch> -->
+    <!-- <yc-switch v-model="active" active-color="green" inactive-color="red" name="hah"></yc-switch> -->
+    <!-- <yc-radio label="1" v-model="gender">男</yc-radio>
+    <yc-radio label="0" v-model="gender">女</yc-radio> -->
+    <yc-radio-group v-model="gender">
+      <yc-radio label="1">男</yc-radio>
+      <yc-radio label="0">女</yc-radio>
+      <yc-radio label="3">?</yc-radio>
+    </yc-radio-group>
   </div>
 </template>
 
 <script>
-import YcButton from './components/button/YcButton.vue'
-import YcDialog from './components/dialog/YcDialog.vue'
+import YcRadio from './components/radio/YcRadio.vue'
+import YcRadioGroup from './components/radio/YcRadioGroup.vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      dialogVisible: false,
+      gender: '1',
+      // username: '',
+      // password: '',
+      // active: false
     }
   },
   components: {
-    YcButton,
-    YcDialog,
+    YcRadio,
+    YcRadioGroup,
   },
-  methods: {
-    fn() {},
-  },
+  methods: {},
 }
 </script>
 
