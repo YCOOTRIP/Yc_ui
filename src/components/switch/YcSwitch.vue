@@ -55,9 +55,12 @@ export default {
 
 <style scoped>
 .yc-switch {
+  display: inline-flex;
+  align-items: center;
   position: relative;
-  height: 20px;
+  font-size: 14px;
   line-height: 20px;
+  height: 20px;
   vertical-align: middle;
 }
 
@@ -68,25 +71,29 @@ export default {
   opacity: 0;
 }
 .yc-switch .core {
+  margin: 0;
   display: inline-block;
   position: relative;
   width: 40px;
   height: 20px;
   border: 1px solid #dcdfe6;
+  outline: none;
   border-radius: 10px;
+  box-sizing: border-box;
   background: #dcdfe6;
   cursor: pointer;
   transition: border-color 0.3s, background-color 0.3s;
+  vertical-align: middle;
 }
 .yc-switch .core .button {
   position: absolute;
   top: 1px;
   left: 1px;
+  border-radius: 100%;
+  transition: all 0.3s;
   width: 16px;
   height: 16px;
-  border-radius: 50%;
   background-color: #fff;
-  transition: all 0.3s;
 }
 .isCheck .core {
   border-color: #409eff;
