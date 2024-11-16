@@ -12,7 +12,7 @@
 export default {
   name: 'YcButton',
   props: {
-    border: {
+    border: { // 是否有边框
       type: Boolean,
       default: false,
     },
